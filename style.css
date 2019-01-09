@@ -8,9 +8,6 @@ body{
     color: #a59797;
     width:100%;
     overflow-x: hidden;
-    /*background: url("images/icons/bg.png") no-repeat;*/
-    /*background-size: cover;*/
-    /*!*background-size:100%;*!*/
     margin:0 auto;
     padding:0;
 }
@@ -18,8 +15,6 @@ body *{
     box-sizing:border-box;
     border: none;
 }
-
-
 img{
     max-width:100%;
     }
@@ -45,20 +40,12 @@ h1, h2 , h3, h4 ,h5 ,h6 ,p{
     max-width:200px;
     margin: 0 auto;
 }
-/*.nav-nav{*/
-    /*display: block;*/
-     /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: relative;*/
- /*}*/
 .nav{
     display: flex;
     justify-content: space-between;
-    padding:0 20px;
-    text-align: center;
+    padding:0 20px;    text-align: center;
 
 }
-
 .nav a{
     font-size: 24px;
     color: #a59797;
@@ -68,17 +55,12 @@ h1, h2 , h3, h4 ,h5 ,h6 ,p{
 .nav a:hover{
     color:#ff84a1;
 }
-
 .burger{
-    /*position: absolute;*/
     display: none;
     opacity: .3;
-
    padding-bottom: 30px;
 }
-
 .main-container{
-
     position:relative;
     background: url("images/icons/white clouds.png") no-repeat bottom;
   }
@@ -86,12 +68,10 @@ h1, h2 , h3, h4 ,h5 ,h6 ,p{
     content:'';
     width:100%;
     height:100%;
-    /*max-width: 1400px;*/
     margin: 0 auto;
     position: absolute;
     top: 0;
     left:0;
-    /*background: #fed3ec;*/
     background: linear-gradient(to bottom, #fed3ec 7%,#fed3ec 7%,#ffffff 28%,#ffffff 28%,#ffffff 36%,#ffffff 47%,#ffffff 47%,#ffffff 47%,#ffffff 47%,#ffffff 47%,#ffffff 49%,#ffffff 51%,#ffffff 54%,#ffffff 73%,#fed3ec 86%);
     z-index:-3;
 }
@@ -100,16 +80,12 @@ h1, h2 , h3, h4 ,h5 ,h6 ,p{
     display: block;
     width:100%;
     height:100%;
-
     background: url("images/icons/white clouds-2.png")  no-repeat top ;
-
     position: absolute;
     top: 120px;
-    /*left:80px;*/
     z-index:-2;
     animation: top_cloud_anime 2s;
 }
-
 h1{
     text-align: center;
     font-family:Lato;
@@ -122,7 +98,6 @@ h1{
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    /*margin: 0 auto;*/
     height: 80vh;
     min-height: 750px;
     position: relative;
@@ -132,29 +107,17 @@ h1{
     align-items: flex-start;
 }
 .main-area p{
-
     font-family:Lato;
     font-size: 30px;
     color: #a59797;
     text-align: center;
     max-width: 400px;
     margin: 20px auto 55px;
-
 }
-/*.main-area_content{*/
-
-    /*max-width: 450px;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%,0);*/
-/*}*/
 .btn-primary{
     display: block;
     padding:25px;
     max-width: 300px;
-
-    /*height: 85px;*/
     background-color:#e56051;
     font-size: 35px;
     border-radius: 50px;
@@ -169,7 +132,6 @@ h1{
     background-color:#ff84a2;
 }
 .banket{
-    /*display: block;*/
     width:50%;
     position: absolute;
     top: 10%;
@@ -178,9 +140,7 @@ h1{
     transition: top 2s;
     animation: anime 2s;
 }
-/*.banket>img{*/
-   /*z-index: -1;*/
-/*}*/
+
 @keyframes anime{
     from{ top:-1500px;}
     to{top:8% }
@@ -212,6 +172,7 @@ section{
  }
  /*=================================aboutUs==================================*/
 .aboutus p{
+    padding: 0 10px;
     max-width: 955px;
     font-size: 18px;
     text-align:left;
@@ -273,13 +234,6 @@ section{
     border-radius: 30px;
     border: 1px;
 }
-
-
-    /*                                     две картинки как бэкграунд
-
-    background: url("images/icons/linza-hover.png") no-repeat , url("images/icons/round hover.png") no-repeat;*/
-    /*background-color: #9c95bd;*/
-
 .model-box:after{
     content:'';
     display: block;
@@ -295,15 +249,15 @@ section{
     visibility: hidden;
 
 }
-                                /*ШАРИК С ЛИНЗОЙ*/
+                                /*the ball*/
 .model-box:before{
     content:'';
     display: block;
     width:100px;
     height:100px;
     border-radius: 50%;
-    background-color: #ff84a2;   /*  КРУГ РОЗОВЫЙ   */
-    background-image: url("images/icons/linza-hover.png") ;    /*ЛИНЗА*/
+    background-color: #ff84a2;   /*  the pink circle  */
+    background-image: url("images/icons/linza-hover.png") ;    /*lens*/
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position: absolute;
@@ -612,7 +566,7 @@ border-radius: 50px;
 }
 @media screen and (max-width: 920px) {
     section {
-        max-width:800px;
+        max-width:720px;
        }
 }
 @media screen and (max-width: 740px) {
@@ -629,9 +583,10 @@ border-radius: 50px;
     .burger {
         display: block;
         width: 52px;
-
     }
-
+    .text-review{
+        padding: 10px;
+    }
     .nav-block {
         width: 80vw;
         box-shadow: 10px 10px 10px black;
