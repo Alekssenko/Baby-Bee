@@ -15,6 +15,8 @@ body *{
     box-sizing:border-box;
     border: none;
 }
+
+
 img{
     max-width:100%;
     }
@@ -31,7 +33,7 @@ h1, h2 , h3, h4 ,h5 ,h6 ,p{
     margin: 0;
 }
 
-/*global*/
+/*==================================header============================*/
 .header{
     max-width:1300px;
     margin:0 auto;
@@ -43,9 +45,10 @@ h1, h2 , h3, h4 ,h5 ,h6 ,p{
 .nav{
     display: flex;
     justify-content: space-between;
-    padding:0 20px;    text-align: center;
-
+    padding:0 20px;
+    text-align: center;
 }
+
 .nav a{
     font-size: 24px;
     color: #a59797;
@@ -107,12 +110,14 @@ h1{
     align-items: flex-start;
 }
 .main-area p{
+
     font-family:Lato;
     font-size: 30px;
     color: #a59797;
     text-align: center;
     max-width: 400px;
     margin: 20px auto 55px;
+
 }
 .btn-primary{
     display: block;
@@ -172,7 +177,6 @@ section{
  }
  /*=================================aboutUs==================================*/
 .aboutus p{
-    padding: 0 10px;
     max-width: 955px;
     font-size: 18px;
     text-align:left;
@@ -249,24 +253,24 @@ section{
     visibility: hidden;
 
 }
-                                /*the ball*/
+                                /*the ball with lens*/
 .model-box:before{
     content:'';
     display: block;
     width:100px;
     height:100px;
     border-radius: 50%;
-    background-color: #ff84a2;   /*  the pink circle  */
-    background-image: url("images/icons/linza-hover.png") ;    /*lens*/
+                                   /*  ring   */
+    background-color: #ff84a2;
+                                    /*lens*/
+    background-image: url("images/icons/linza-hover.png") ;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    /*z-index: 4;*/
     visibility: hidden;
-
 }
 .model-box:hover:after,.model-box:hover:before{
     visibility: visible;
@@ -385,25 +389,24 @@ line-height: 1.2em;
     position: absolute;
     top: 35%;
     left: 50%;
-
 }
-.foto-wreper{
+.photo-wreper{
     margin: 0 auto;
     display: flex;
     max-width: 1000px;
     flex-direction: column;
     justify-content: space-around;
 }
-.fotos{
+.photos{
     flex-wrap: nowrap;
     display: flex;
     justify-content:space-around;
     align-items: stretch;
 }
-.fotos:last-child{
+.photos:last-child{
     align-items: flex-end;
 }
-.fotos>a {
+.photos>a {
    max-width: 300px;
    margin: 1%;
  }
@@ -445,7 +448,6 @@ line-height: 1.2em;
     width: 140px;
    }
 .soc{
-    /*width: 50px;*/
     background-size: cover;
     filter:grayscale(1);
     opacity:.48;
@@ -464,7 +466,7 @@ line-height: 1.2em;
     background: url("images/icons/hover_instagram_icon.svg") center no-repeat;
 }
 
-.popup-conteiner{
+.popup-container{
     position:fixed;
     left:0;
     top: 0;
@@ -566,7 +568,7 @@ border-radius: 50px;
 }
 @media screen and (max-width: 920px) {
     section {
-        max-width:720px;
+        max-width:800px;
        }
 }
 @media screen and (max-width: 740px) {
@@ -583,10 +585,9 @@ border-radius: 50px;
     .burger {
         display: block;
         width: 52px;
+
     }
-    .text-review{
-        padding: 10px;
-    }
+
     .nav-block {
         width: 80vw;
         box-shadow: 10px 10px 10px black;
