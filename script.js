@@ -6,10 +6,10 @@
 
 
 $(".close").click(function () {
-    $(".popup-conteiner").css('visibility', 'hidden');
+    $(".popup-container").css('visibility', 'hidden');
 });
 $(".model-box").click(function () {
-    $(".popup-conteiner").css('visibility', 'visible');
+    $(".popup-container").css('visibility', 'visible');
 });
 
 //                     ================== menu======================

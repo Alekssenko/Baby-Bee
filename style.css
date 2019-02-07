@@ -328,12 +328,12 @@ section{
     display: flex;flex-direction: column;
     align-self: flex-start;
 }
-.img-conteiner{
+.img-container{
     display: flex;
     align-self: auto;
     max-height: 120px;
 }
-.img-conteiner>img{
+.img-container>img{
     display: block;
 }
 .img-review{
